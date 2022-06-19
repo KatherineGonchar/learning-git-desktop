@@ -1,2 +1,2 @@
-# learning-git-desktop
+# Mini weather-app as my homework for SheCodes
  
