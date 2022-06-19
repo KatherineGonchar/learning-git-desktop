@@ -5,31 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script
-      crossorigin
-      type="text/javascript"
-      src="https://codesandbox.io/static/js/vendors~app~embed~sandbox~sandbox-startup.bcc15d438.chunk.js"
-    ></script>
-    <script
-      crossorigin
-      type="text/javascript"
-      src="https://codesandbox.io/static/js/vendors~app~embed~sandbox-startup.6e3433fd3.chunk.js"
-    ></script>
-    <script
-      crossorigin
-      type="text/javascript"
-      src="https://codesandbox.io/static/js/default~app~embed~sandbox~sandbox-startup.55b6cfc89.chunk.js"
-    ></script>
-    <script
-      crossorigin
-      type="text/javascript"
-      src="https://codesandbox.io/static/js/sandbox-startup.5298fe502.js"
-    ></script>
-
-    <script
-      src="//codesandbox.io/static/browserfs12/browserfs.min.js"
-      type="text/javascript"
-    ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -80,9 +55,10 @@
           <div class="col-6">
             <div class="clearfix">
               <div class="float-left">
-                <span class="temperature" id="temperature">19</span
-                ><span class="units">
-                  <a href="#" id="celsius-link">°C</a> |
+                <div class="icon"><img class="weather-icon" src="#" alt="weather icon"></div>
+                <span class="temperature" id="temperature">19</span>
+                <span class="units">
+                  <a href="#" class="active" id="celsius-link">°C</a> |
                   <a href="#" id="fahrenheit-link">°F</a>
                 </span>
               </div>

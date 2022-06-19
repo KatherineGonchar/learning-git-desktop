@@ -31,8 +31,12 @@ body {
     border-radius: 10px;
     max-width: 600px;
   }
-  
+  .icon{
+    display: inline;
+  }
   .weather-icon {
+    position: relative;
+    top: -18px;
     height: 64px;
     width: 64px;
     margin-right: 10px;
@@ -49,6 +53,14 @@ body {
     position: relative;
     top: -34px;
   }
+  .active{
+    color: rgb(33, 33, 33);
+    cursor: default;
+  }
+.active:hover{
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+}
   
   .search-form {
     margin-bottom: 20px;
