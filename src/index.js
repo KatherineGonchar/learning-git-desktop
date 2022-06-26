@@ -11,7 +11,14 @@ let weekDays = [
   "Saturday"
 ];
 let currentWeekDay = weekDays[currentDateAndTime.getDay()];
-date.innerHTML = `${currentWeekDay} ${currentDateAndTime.getHours()}:${currentDateAndTime.getMinutes()}`;
+date.innerHTML = `${currentWeekDay} ${currentDateAndTime.getHours()}:${fixMinutes()}`;
+function fixMinutes(){
+  let minutes = currentDateAndTime.getMinutes();
+  if (minutes < 10){
+    minutes = "0" + minutes.toString();
+  }
+  return minutes;
+}
 
 let city = document.querySelector("#city");
 let currentTemp = document.querySelector("#temperature");
@@ -92,7 +99,6 @@ function displayForecast(response){
 }
 
 function getForecast(coordinates){
-  console.log(coordinates);
   let currentLat = coordinates.lat;
   let currentLong = coordinates.lon;
   let forecastApiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${currentLat}&lon=${currentLong}&exclude=minutely,hourly,alerts&units=metric&appid=${apiKey}`;
