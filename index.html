@@ -23,7 +23,7 @@
               <input
                 type="search"
                 placeholder="Type a city.."
-                autofocus="on"
+                autofocus
                 autocomplete="off"
                 id="city-input"
                 class="form-control shadow-sm"
@@ -57,10 +57,7 @@
               <div class="float-left">
                 <div class="icon"><img class="weather-icon" src="#" alt="weather icon"></div>
                 <span class="temperature" id="temperature">19</span>
-                <span class="units">
-                  <a href="#" class="active" id="celsius-link">°C</a> |
-                  <a href="#" id="fahrenheit-link">°F</a>
-                </span>
+                <span class="units">°C</span>
               </div>
             </div>
           </div>
@@ -73,6 +70,20 @@
                 Wind:
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">
+                Sun
+              </div>
+              <img src="https://yt3.ggpht.com/5oUY3tashyxfqsjO5SGhjT4dus8FkN9CsAHwXWISFrdPYii1FudD4ICtLfuCw6-THJsJbgoY=s88-c-k-c0x00ffffff-no-rj" alt="forecast icon for today" height="50px">
+              <div class="weather-forecast-temp">
+                <span class="weather-forecast-temp-max">30°</span>
+                <span class="weather-forecast-temp-min">20°</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
